@@ -175,10 +175,10 @@ footer input {
         font-size: .7em;
     }
     footer {
-        height: 12.2vh;
+        height: 12.4vh;
         justify-content: space-around;
         padding: 2em;
-        font-size: .7em;
+        font-size: .9em;
     }
 
     .footer_fieldset {
@@ -201,5 +201,12 @@ footer input {
     .container_tabla {
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media screen and (min-width:760px) {
+    .container_cards h2 {
+        width:100%;
+        text-align: center;
     }
 }
