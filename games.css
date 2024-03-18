@@ -209,4 +209,7 @@ footer input {
         width:100%;
         text-align: center;
     }
+    * {
+        font-size: 1.071em;
+    }
 }
