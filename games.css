@@ -1,0 +1,205 @@
+:root {
+    --blanco:white;
+    --negro:black;
+    --azul:#3F51B5;
+    --azulino:rgb(197, 195, 230);
+}
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_column {
+    flex-direction: column;
+}
+
+.header_titulog {
+    justify-content: space-between;
+    padding-left: .3em;
+    padding-right: .3em;
+    padding-bottom: .05em;
+    font-size: 0.9em;  
+    align-items: center; 
+    text-shadow: 0 0 2px rgba(0,0,0,0.6);
+    font-family: sans-serif;
+}
+
+.header_titulog img {
+    height: 40px;
+}
+
+.header_nav {
+    border-top: solid 1px var(--azul);
+    border-bottom: solid 1px var(--azul);
+    justify-content: center;
+    gap:5em;
+    font-size: .5em;
+    padding:.5em;
+}
+
+.header_nav a {
+    text-decoration: none;
+    color: var(--negro);
+    padding:0.2em;
+    box-shadow: 1px 1px 2px var(--azul);
+    border-radius: 2px;
+}
+
+.container {
+    align-items: center;
+    background-image: url(./Imagenes/fondo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -1250px;
+    padding: .5em;
+}
+.container_cards {
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5em;
+    gap: .5em;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.card {
+    width: 22vh;
+    height: 22vh;
+    align-items: center;
+    border: solid black 1px;
+    background-color: var(--azulino);
+}
+
+.card img{
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 0.1em;
+}
+
+.container_je h2{
+    font-size: .8em;
+    padding:.5em
+}
+.container_tablalista {
+    font-size: .5em;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.container_lista {
+    background-color: var(--azulino);
+    list-style-position: inside;
+    border:var(--negro) solid 1px;
+    width: 14em;
+    height: 8em;
+    padding:.6em;
+}
+
+.container_tabla {
+    border: solid var(--negro) 1px;
+    padding:.1em .6em;
+    background-color: var(--azulino);
+    width: 14em;
+    height: 8em;
+}
+
+.container_tabla table {
+    background-color: var(--blanco);
+    margin: 5px;
+    text-align: center;
+    height:1vh;
+    font-size: .58em;
+}
+
+.container_tabla table,td,tr, th {
+    border: solid 1px var(--negro);
+    border-collapse: collapse;
+    padding: .2em;
+}
+
+footer {
+    background-color: var(--negro);
+    color: var(--blanco);
+    align-items: center;
+    font-size: .5em;
+    padding:0.5em;
+    gap: 0.5em;
+}
+footer legend {
+    border:solid 1px var(--blanco);
+    align-items: center;
+}
+footer button {
+    font-size: 1em;
+}
+footer label input {
+    padding: .3em;
+}
+footer input {
+    width: 50%;
+}
+
+@media screen and (min-width:1024px) {
+    header {
+        height: 21.3vh;
+        font-size: 2.3em;
+    }
+    .header_nav {
+        font-size: .35em;
+        padding: .6em;   
+    }
+    .header_titulog img{
+        height: 100px;
+        width: 100px;
+    }
+    .container {
+        font-size: 1.6em;
+        background-position: center;
+        min-height:60vh;
+    }
+    .card {
+        height:30vh;
+        width: 30vh;
+    }
+    .container_tablalista {
+        font-size: .7em;
+    }
+    footer {
+        height: 12.2vh;
+        justify-content: space-around;
+        padding: 2em;
+        font-size: .7em;
+    }
+
+    .footer_fieldset {
+        width:90%;
+        gap:1em;
+        padding: .5em;
+        justify-content: center;
+    }
+    .footer_fieldset input {
+        width: 50%;
+    }
+    .container_cards {
+        width: 100%;
+        font-size: 0.4em;
+    }
+    .container_cards h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .container_tabla {
+        align-items: center;
+        justify-content: center;
+    }
+}

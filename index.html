@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Juegos</title>
+    <link rel="stylesheet" href="./games.css">
+</head>
+<body>
+    <header>
+        <div class ="header_titulog flex">
+            <img src="./Imagenes/logo1.png" alt="Logo of pc gamer">
+            <h1>Todo Juegos</h1>
+            <img src="./Imagenes/logo2.png" alt="Logo play station">
+        </div>
+        <nav class ="header_nav flex">
+            <a href="#">Principal</a>
+            <a href="">Favoritos</a>
+            <a href="">Contacto</a>
+        </nav>
+    </header>
+    <main class="container flex flex_column">
+        <section  class="container_cards flex">
+            <h2>Recomendados</h2>
+            <article class ="card flex flex_column">
+                <img src="./Imagenes/jedi.webp" alt="Game of star wars, jedi fallen">
+                <h3>Jedi Fallen</h3>
+            </article>
+            <article class ="card flex flex_column">
+                <img src="./Imagenes/Valorant.jpg" alt="game of valorant">
+                <h3>Valorant</h3>
+            </article>
+            <article class ="card flex flex_column">
+                <img src="./Imagenes/league-of-legends.jpg" alt="game of league of legends">
+                <h3>League of legends</h3>
+            </article>
+        </section>
+        <section class ="container_je">
+            <h2>Plataformas para jugar videojuegos</h2>
+            <div class="container_tablalista flex">
+                <div class="container_lista">
+                    <ul>
+                        <li>Pc</li>
+                        <li>Playstation</li>
+                        <li>Xbox</li>
+                        <li>Mobile</li>
+                    </ul>
+                </div>
+                <div class="container_tabla flex">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Game</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Call of duty Modern Warfare</td>
+                                <td>$45.49</td>
+                            </tr>
+                            <tr>
+                                <td>Fifa 2024</td>
+                                <td>11.00</td>
+                            </tr>
+                            <tr>
+                                <td>Baldur's Gate 3</td>
+                                <td>$32.00</td>
+                            </tr>
+                            <tr>
+                                <td>Cyberpunk</td>
+                                <td>$22.49</td>
+                            </tr>
+                        </tbody>    
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="flex">
+        <p>2024 - Todos los derechos reservados</p>
+        <form action="./show_data.html" method="get">
+            <fieldset class = "footer_fieldset flex">
+                <legend>Suscribite</legend>
+                    <label for="email">email</label>
+                        <input type="email" name="email" id="email">
+                        <button>Enviar</button>
+            </fieldset>
+        </form>
+        <p>Edmundo Rúveda</p>
+    </footer>
+</body>
+</html>
